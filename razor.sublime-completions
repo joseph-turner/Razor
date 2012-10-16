@@ -1,0 +1,15 @@
+{
+	"scope": "source.cshtml",
+
+	"completions":
+	[
+		{ "trigger": "actionlink", "contents": "@Html.ActionLink(TermCaching.GetTranslation(\"${1:TermID}\", \"${2:DefaultTerm}\"), \"${3:Page}\", \"${4:Route}\")" },
+		{ "trigger": "partial", "contents": "@Html.Partial(\"${1:PartialName}\", ${2:Model})" },
+		{ "trigger": "raw", "contents": "@Html.Raw($1)" },
+		{ "trigger": "section", "contents": "@section ${1:SectionName}\n{\n\t${2:SectionContents}\n}" },
+		{ "trigger": "term", "contents": "@Html.Term(\"${1:TermID}\", \"${2:DefaultTerm}\")" },
+		{ "trigger": "terms", "contents": "@TermsTranslation.Get(\"${1:TermID}\", \"${2:DefaultTerm}\")" },
+		{ "trigger": "urlaction", "contents": "@Url.Action(\"$1\", \"$2\")" },
+		{ "trigger": "urlcontent", "contents": "@Url.Content(\"${1:~/${2:Path}/${3:to}/${4:the}/${5:file.ext}}\")" }
+	]
+}
