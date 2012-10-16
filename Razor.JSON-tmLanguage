@@ -1,0 +1,84 @@
+{
+	"name": "Razor",
+	"scopeName": "source.cshtml",
+	"fileTypes": ["cshtml"],
+	"patterns": [
+		{
+			"name": "section.embedded.source.cshtml",
+			"begin": "(@?([a-zA-Z0-9]+)?)(\\s[a-zA-Z0-9]+)?(\n|\r)?(\\{)",
+			"beginCaptures": {
+				"0": { "name": "section.embedded.begin.cshtml"},
+			    "0": { "name": "punctuation.section.embedded.begin.cshtml" },
+			    "1": { "name": "keyword.control.cshtml"}
+			},
+			"patterns": [
+				{
+					"include": "#embedded-code"
+				},
+				{
+					"include": "#comments"
+				},
+				{
+					"include": "source.cs"
+				},
+				{
+					"include": "text.html.basic"
+				}
+			],
+			"end": "\\}",
+			"endCaptures": {
+			    "0": { "name": "punctuation.section.embedded.begin.cshtml" }
+			},
+			"comments": "Simple multi-line code section"
+		},
+		{
+			"begin": "(@[a-zA-Z0-9]+)(\\s?)",
+			"captures": {
+				"0": { "name": "section.embedded.begin.cshtml" },
+				"1": { "name": "keyword.control.cshtml"}
+			},
+			"patterns": [
+				{
+					"match": "(([a-zA-Z0-9]+)(\\.)?)+?",
+					"captures": {
+					    "2": { "name": "entity.name.tag.source.cshtml" },
+					    "3": { "name": "punctuation.separator.namespace.source.cshtml"}
+					}
+				},
+				{ "include": "#embedded-code" },
+				{ "include": "#comments" },
+				{ "include": "source.cs" },
+				{ "include": "text.html.basic" }
+			],
+			"end": "(\\n)",
+			"comments": "Covers single line Razor tags"
+		},
+		{ "include": "#comments" },
+		{ "include": "text.html.basic" }
+	],
+	"repository": {
+		"embedded-code": {
+			"match": "(@?[a-zA-Z0-9]+)(\\.([a-zA-Z0-9]+))?",
+			"captures": {
+				"1": { "name": "keyword.control.cshtml" },
+				"3": { "name": "entity.name.tag.source.cshtml"}
+			},
+			"patterns": [
+				{
+					"include": "#comments"
+				}
+			]
+		},
+		"comments": {
+			"begin": "@\\*", 
+			"captures": {
+				"0": {
+					"name": "punctuation.definition.comment.source.cshtml"
+				}
+			}, 
+			"end": "\\*@\\n?", 
+			"name": "comment.block.cshtml"
+		}
+	},
+	"uuid": "4f902f1e-9ac6-497d-a110-6d450bfd5b0b"
+}
