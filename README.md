@@ -7,7 +7,9 @@ Having been unable to find a Razor Syntax Definition for Razor anywhere, I decid
 ###Instructions
 Tested on Windows and Mac. 
 
-**Mac OS X**: clone this to: ~/Users/User/Library/Application Support/Sublime Text 2/Packages/User. It should automatically recognize the syntax based on the file extension.
+**Mac OS X**: clone this to: ~/Users/{User}/Library/Application Support/Sublime Text 2/Packages/User. It should automatically recognize the syntax based on the file extension. 
+
+You can also download the .zip file then in Sublime Text 2 go to Preferences -> Browse Packages -> (Packages directory will be opened in finder) copy the .zip file contents over to the /User directory (may have to overwrite existing files).
 
 **Windows**: clone this to: %APPDATA%\Sublime Text 2\Packages\User which expands to something like 
 `C:\Users\username\AppData\Roaming\Sublime Text 2\Packages\User` on Windows Vista/7
