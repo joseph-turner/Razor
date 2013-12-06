@@ -1,0 +1,7 @@
+===============================================================================
+Razor Syntax Highlighting
+===============================================================================
+
++ Ignores apostrophe's within Razor sections...
+
++ Allows for nesting Razor syntax

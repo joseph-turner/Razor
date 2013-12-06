@@ -45,6 +45,68 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>begin</key>
+					<string>(@?([a-zA-Z0-9]+)?)(\s[a-zA-Z0-9]+)?(
+|
+)?(\{)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.begin.cshtml</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.cshtml</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.embedded.begin.cshtml</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>section.embedded.source.cshtml</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>'</string>
+							<key>name</key>
+							<string>string.quoted.single.cshtml</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#embedded-code</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#comments</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>source.cs</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>text.html.basic</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>'</string>
+					<key>name</key>
+					<string>string.quoted.single.cshtml</string>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>#embedded-code</string>
 				</dict>

@@ -13,6 +13,41 @@
 			},
 			"patterns": [
 				{
+					"name": "section.embedded.source.cshtml",
+					"begin": "(@?([a-zA-Z0-9]+)?)(\\s[a-zA-Z0-9]+)?(\n|\r)?(\\{)",
+					"beginCaptures": {
+						"0": { "name": "section.embedded.begin.cshtml"},
+					    "0": { "name": "punctuation.section.embedded.begin.cshtml" },
+					    "1": { "name": "keyword.control.cshtml"}
+					},
+					"patterns": [
+						{
+							"name": "string.quoted.single.cshtml",
+							"match": "'"
+						},
+						{
+							"include": "#embedded-code"
+						},
+						{
+							"include": "#comments"
+						},
+						{
+							"include": "source.cs"
+						},
+						{
+							"include": "text.html.basic"
+						}
+					],
+					"end": "\\}",
+					"endCaptures": {
+					    "0": { "name": "punctuation.section.embedded.begin.cshtml" }
+					}
+				},
+				{
+					"name": "string.quoted.single.cshtml",
+					"match": "'"
+				},
+				{
 					"include": "#embedded-code"
 				},
 				{

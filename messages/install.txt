@@ -1,0 +1,5 @@
+===============================================================================
+Razor Syntax Highlighting
+===============================================================================
+
+Thanks for installing! Feel free to identify bugs, squash them, issue pull requests, and contribute in anyway you want to!
