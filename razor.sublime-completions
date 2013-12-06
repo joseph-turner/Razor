@@ -1,14 +1,13 @@
 {
     "scope": "source.cshtml",
-
     "completions":
     [
         {
-            "trigger": "actionlink",
-            "contents": "@Html.ActionLink(TermCaching.GetTranslation(\"${1:TermID}\", \"${2:DefaultTerm}\"), \"${3:Page}\", \"${4:Route}\")"
+            "trigger": "ActionLink",
+            "contents": "@Html.ActionLink(\"${1:Display Content}\"), \"${3:Controller}\", \"${4:Action}\",\"${4:new attributes}\")"
         },
         {
-            "trigger": "partial",
+            "trigger": "Partial",
             "contents": "@Html.Partial(\"${1:PartialName}\", ${2:Model})"
         },
         {
@@ -28,12 +27,24 @@
             "contents": "@TermsTranslation.Get(\"${1:TermID}\", \"${2:DefaultTerm}\")"
         },
         {
-            "trigger":"urlaction",
+            "trigger": "UrlAction",
             "contents": "@Url.Action(\"$1\", \"$2\")"
         },
         {
-            "trigger": "urlcontent",
+            "trigger": "UrlContent",
             "contents": "@Url.Content(\"${1:~/${2:Path}/${3:to}/${4:the}/${5:file.ext}}\")"
+        },
+        {
+            "trigger": "DisplayFor",
+            "contents" : "@Html.DisplayFor(\"${1:lambda expression}\")"
+        },
+        {
+            "trigger": "DisplayNameFor",
+            "contents" : "@Html.DisplayNameFor(\"${1:lambda expression}\")"
+        },
+        {
+            "trigger": "LabelFor",
+            "contents" : "@Html.LabelFor(\"${1:model=>model.variable}\")"
         }
     ]
 }
