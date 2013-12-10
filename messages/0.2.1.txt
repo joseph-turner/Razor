@@ -1,0 +1,5 @@
+===============================================================================
+Razor Syntax Highlighting
+===============================================================================
+
++ Fixed apostrophe's from acting like quote marks... now the only problem is that you HAVE to use double quotes to make strings.
