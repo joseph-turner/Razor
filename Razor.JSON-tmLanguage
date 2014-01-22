@@ -1,6 +1,6 @@
 {
     "name": "Razor",
-    "scopeName": "source.cshtml",
+    "scopeName": "text.html",
     "fileTypes": ["cshtml"],
     "patterns": [
         {
@@ -105,13 +105,13 @@
             ]
         },
         "comments": {
-            "begin": "@\\*", 
+            "begin": "@\\*",
             "captures": {
                 "0": {
                     "name": "punctuation.definition.comment.source.cshtml"
                 }
-            }, 
-            "end": "\\*@\\n?", 
+            },
+            "end": "\\*@\\n?",
             "name": "comment.block.cshtml"
         }
     },
