@@ -1,0 +1,7 @@
+===============================================================================
+Razor Syntax Highlighting
+===============================================================================
+
++ Fixed problem with C# keywords, like "class", breaking formatting in Razor sections
+
++ Added snippets to use instead of completions. (Sublime Text gives these higher priority and the completions are being ignored in favor of plugin snippets like Emmet.)

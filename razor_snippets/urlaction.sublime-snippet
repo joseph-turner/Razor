@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+@Url.Action("$1", "$2")
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UrlAction</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.cshtml - source</scope>
+</snippet>

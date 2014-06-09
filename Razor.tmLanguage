@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -113,10 +113,6 @@
 				<dict>
 					<key>include</key>
 					<string>#comments</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>source.cs</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -236,7 +232,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>text.html</string>
+	<string>text.html.cshtml</string>
 	<key>uuid</key>
 	<string>4f902f1e-9ac6-497d-a110-6d450bfd5b0b</string>
 </dict>

@@ -1,5 +1,5 @@
 {
-    "scope": "source.cshtml",
+    "scope": "text.html.cshtml - source",
     "completions":
     [
         {

@@ -1,6 +1,6 @@
 {
     "name": "Razor",
-    "scopeName": "text.html",
+    "scopeName": "text.html.cshtml",
     "fileTypes": ["cshtml"],
     "patterns": [
         {
@@ -52,9 +52,6 @@
                 },
                 {
                     "include": "#comments"
-                },
-                {
-                    "include": "source.cs"
                 },
                 {
                     "include": "text.html.basic"

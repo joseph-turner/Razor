@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+@Html.ActionLink("${1:Display Content}", "${3:Controller}", "${4:Action}","${4:new attributes}")
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>ActionLink</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.cshtml - source</scope>
+</snippet>

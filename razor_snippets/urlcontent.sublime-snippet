@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+@Url.Content("${1:~/${2:Path}/${3:to}/${4:the}/${5:file.ext}}")
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>UrlContent</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>text.html.cshtml - source</scope>
+</snippet>
