@@ -108,7 +108,7 @@
                     "name": "punctuation.definition.comment.source.cshtml"
                 }
             },
-            "end": "\\*@\\n?",
+            "end": "\\*@",
             "name": "comment.block.cshtml"
         }
     },
