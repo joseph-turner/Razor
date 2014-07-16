@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>comments</string>
 	<key>scope</key>
-	<string>source.cshtml</string>
+	<string>text.html.cshtml</string>
 	<key>settings</key>
 	<dict>
 		<key>shellVariables</key>
