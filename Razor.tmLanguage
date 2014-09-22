@@ -173,7 +173,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>text.html.basic</string>
+					<string>text.html.handlebars</string>
 				</dict>
 			</array>
 		</dict>
@@ -183,7 +183,7 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>text.html.basic</string>
+			<string>text.html.handlebars</string>
 		</dict>
 	</array>
 	<key>repository</key>
