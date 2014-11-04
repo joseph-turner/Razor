@@ -77,18 +77,28 @@
 					<key>patterns</key>
 					<array>
 						<dict>
-							<key>match</key>
-							<string>'</string>
-							<key>name</key>
-							<string>string.quoted.single.cshtml</string>
-						</dict>
-						<dict>
 							<key>include</key>
 							<string>#embedded-code</string>
 						</dict>
 						<dict>
 							<key>include</key>
 							<string>#comments</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#single-quotes</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#line-comments</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#block-comments</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#double-quotes</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -101,18 +111,28 @@
 					</array>
 				</dict>
 				<dict>
-					<key>match</key>
-					<string>'</string>
-					<key>name</key>
-					<string>string.quoted.single.cshtml</string>
-				</dict>
-				<dict>
 					<key>include</key>
 					<string>#embedded-code</string>
 				</dict>
 				<dict>
 					<key>include</key>
 					<string>#comments</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#line-comments</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#block-comments</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#single-quotes</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#double-quotes</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -169,6 +189,14 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#single-quotes</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#double-quotes</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>source.cs</string>
 				</dict>
 				<dict>
@@ -196,6 +224,15 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>block-comments</key>
+		<dict>
+			<key>begin</key>
+			<string>/\*</string>
+			<key>end</key>
+			<string>((?=})|(\*/))</string>
+			<key>name</key>
+			<string>comment.block.cshtml</string>
+		</dict>
 		<key>comments</key>
 		<dict>
 			<key>begin</key>
@@ -212,6 +249,15 @@
 			<string>\*@</string>
 			<key>name</key>
 			<string>comment.block.cshtml</string>
+		</dict>
+		<key>double-quotes</key>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>end</key>
+			<string>"</string>
+			<key>name</key>
+			<string>string.quoted.double.cshtml</string>
 		</dict>
 		<key>embedded-code</key>
 		<dict>
@@ -237,6 +283,24 @@
 					<string>#comments</string>
 				</dict>
 			</array>
+		</dict>
+		<key>line-comments</key>
+		<dict>
+			<key>begin</key>
+			<string>(\s*)//</string>
+			<key>end</key>
+			<string>$(\s*)</string>
+			<key>name</key>
+			<string>comment.line.double-slash.cshtml</string>
+		</dict>
+		<key>single-quotes</key>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>end</key>
+			<string>'</string>
+			<key>name</key>
+			<string>string.quoted.single.cshtml</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>

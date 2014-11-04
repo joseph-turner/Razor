@@ -2,4 +2,5 @@
 Razor Syntax Highlighting
 ===============================================================================
 
-Thanks for installing! Feel free to report bugs, squash them, issue pull requests, and contribute in anyway you want to!
++ Added alternate comment syntax (/* Block Comment */, // Line Comment) within Razor code blocks
++ Bug fixes

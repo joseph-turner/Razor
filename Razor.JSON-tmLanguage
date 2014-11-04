@@ -22,15 +22,15 @@
                     },
                     "patterns": [
                         {
-                            "name": "string.quoted.single.cshtml",
-                            "match": "'"
-                        },
-                        {
                             "include": "#embedded-code"
                         },
                         {
                             "include": "#comments"
                         },
+                        { "include": "#single-quotes" },
+                        { "include": "#line-comments" },
+                        { "include": "#block-comments" },
+                        { "include": "#double-quotes" },
                         {
                             "include": "source.cs"
                         },
@@ -44,15 +44,15 @@
                     }
                 },
                 {
-                    "name": "string.quoted.single.cshtml",
-                    "match": "'"
-                },
-                {
                     "include": "#embedded-code"
                 },
                 {
                     "include": "#comments"
                 },
+                { "include": "#line-comments" },
+                { "include": "#block-comments" },
+                { "include": "#single-quotes" },
+                { "include": "#double-quotes" },
                 {
                     "include": "text.html.basic"
                 }
@@ -79,6 +79,8 @@
                 },
                 { "include": "#embedded-code" },
                 { "include": "#comments" },
+                { "include": "#single-quotes" },
+                { "include": "#double-quotes" },
                 { "include": "source.cs" },
                 { "include": "text.html.basic" },
                 { "include": "text.html.handlebars" }
@@ -112,6 +114,22 @@
             },
             "end": "\\*@",
             "name": "comment.block.cshtml"
+        },
+        "line-comments": { "name": "comment.line.double-slash.cshtml",
+          "begin": "(\\s*)//",
+          "end": "$(\\s*)"
+        },
+        "block-comments": { "name": "comment.block.cshtml",
+          "begin": "/\\*",
+          "end": "((?=})|(\\*/))"
+        },
+        "single-quotes": { "name": "string.quoted.single.cshtml",
+          "begin": "'",
+          "end": "'"
+        },
+        "double-quotes": { "name": "string.quoted.double.cshtml",
+          "begin": "\"",
+          "end": "\""
         }
     },
     "uuid": "4f902f1e-9ac6-497d-a110-6d450bfd5b0b"
