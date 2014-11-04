@@ -80,14 +80,14 @@
                 { "include": "#embedded-code" },
                 { "include": "#comments" },
                 { "include": "source.cs" },
-                // { "include": "text.html.basic" },
+                { "include": "text.html.basic" },
                 { "include": "text.html.handlebars" }
             ],
             "end": "(\\n|\\s)",
             "comments": "Covers single line Razor tags"
         },
         { "include": "#comments" },
-        // { "include": "text.html.basic" },
+        { "include": "text.html.basic" },
         { "include": "text.html.handlebars" }
     ],
     "repository": {

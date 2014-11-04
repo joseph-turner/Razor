@@ -1,2 +1,5 @@
 *.cache
 .DS_Store
+
+Razor
+*.glue
