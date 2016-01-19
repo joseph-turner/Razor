@@ -1,5 +1,8 @@
 #Razor (cshtml) Syntax Definition for Sublime Text
 
+##NOTE
+Please contact me if you are interested in taking over this project. I never use the Razor syntax anymore so the project has gone stagnant.
+
 ##Overview
 Having been unable to find a Razor Syntax Definition for Razor anywhere, I decided to do this myself.
 
